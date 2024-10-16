@@ -18,7 +18,7 @@ To set up the project on your local machine, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/mars-weather-data.git
+   git clone https://github.com/kittychew/mars-weather-data.git
 2.	Navigate to the project directory:
     ```bash
     cd mars-weather-data
@@ -96,6 +96,17 @@ The results of the Mars weather data scraping and analysis include the following
       11    857.014493
       12    842.156627
 
-   
+5. **How Many Terrestrial Days Exist in a Martian Year**: 
+   To estimate the number of terrestrial days **(675 days)** in a Martian year, we used the following code:
+   ```python
+   mars_df.plot(x='terrestrial_date', y='min_temp')
+   plt.title('Minimum Temperature on Mars')
+   plt.xlabel('Terrestrial Date')
+   plt.ylabel('Minimum Temperature (°C)')
+   plt.show()
+  
 ## License 
 This project is licensed under the MIT License.
+
+## Acknowledgments
+I would like to thank ChatGPT for its assistance in various aspects of this project, including code examples and guidance.
